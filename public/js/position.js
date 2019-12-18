@@ -1,7 +1,7 @@
 //  function showPosition() {
 //     var latlon = 42.991223700000006 + "," + -81.2773012
   
-//   var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latlon + "&zoom=14&size=400x300&sensor=false&key=AIzaSyCdM8k68a3j8Vy7-URgexkRbHZZ--FQKlg";
+//   var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latlon + "&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
 //    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>"
 //    }
 
@@ -31,6 +31,3 @@ function myMap() {
     }
 
 
-/* <script>
-      async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdM8k68a3j8Vy7-URgexkRbHZZ--FQKlg&callback=initMap">
-</script> */
