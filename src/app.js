@@ -33,8 +33,8 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/help', (req, res) => {
-    res.render('help', {
+app.get('/contactus', (req, res) => {
+    res.render('contactus', {
         helpText: 'This is some helpful text.',
         title: 'Help',
         name: 'Some creative nature'
