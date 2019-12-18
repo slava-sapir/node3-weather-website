@@ -83,25 +83,30 @@
 		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
 		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
 		              <i class="fa fa-envelope"></i>: 
-                        <a href="mailto:confusion@weather.net">confusion@.weathernet</a>
+                      <a href="mailto:slavas21@gmail.com">confusion@weather.net</a><br>
+                      <a type="button" class="btn btn-primary" href="tel:+15197028065"><i class="fa fa-phone"></i> Call</a>
+                      <a type="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                      <a type="button" class="btn btn-success" href="mailto:slavas21@gmail.com"><i class="fa fa-envelope-o"></i> Email</a>
+
 		           </address>
             </div>
             <div class="col-xs-12 col-sm-6 col-sm-offset-1">
                 <h5>Map of our Location</h5>
-            </div>
-            <div class="col-xs-12 col-sm-11 col-sm-offset-1">
-                <div class="btn-group" role="group" aria-label="...">
-                    <a type="button" class="btn btn-primary" href="tel:+85212345678"><i class="fa fa-phone"></i> Call</a>
-                    <a type="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
-                    <a type="button" class="btn btn-success" href="mailto:confusion@weather.net"><i class="fa fa-envelope-o"></i> Email</a>
-                </div>
-
+                <div id="mapholder" style="width:100%;height:200px;"></div>
             </div>
         </div>
 </div>
 
      {{>footer}}
-
+     <script src="/js/position.js"></script>
+     {{!-- <script>function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(42.991223700000006,-81.2773012),
+      zoom:5
+    };
+    var map = new google.maps.Map(document.getElementById("mapholder"),mapProp);
+    }</script> --}}
+     <script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdM8k68a3j8Vy7-URgexkRbHZZ--FQKlg&callback=myMap"></script>     
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
