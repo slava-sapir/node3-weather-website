@@ -36,71 +36,57 @@
 </head>
 
 <body>
-    <div class="main-content">
-        {{>navbar}}
-        <div class="row row-content">
-          <div class="col-xs-12">
-              <p><h3>PLease inter the location for weather outcast</h3> </p>
-              <p>Our app using API of mapbox.com and darksky.net websites</p>
-           </div>
-       <div class="col-xs-12 col-sm-9">
-          <form class="form-horizontal" role="form">
+    {{>navbar}}
+    <div class="container">
+           <div class="row row-content">
+             <div class="col-xs-12">
+                <p><h3>Please enter the location for weather outcast</h3> </p>
+                <p>Our app using API of mapbox.com and darksky.net websites</p>
+             </div>
+          <div class="col-xs-12 col-sm-9">
+             <form class="form-horizontal" role="form">
                     <div class="form-group">
-                       <div class="col-sm-5">
+                       <div class="col-sm-4">
                         <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter location">
                        </div>
                     </div>
                      <div class="form-group">
-                        <div class=" col-sm-8">
+                        <div class="col-sm-8">
                             <button type="submit" class="btn btn-primary">Search</button>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class=" col-sm-8">
-                         <label for="location"  class="col-sm-2 control-label"><strong>Location:</strong></label>
-                         <p id="message-1"></p>
+                        <div class="col-sm-8">
+                         <!--<label for="location"  class="col-sm-2 control-label"><strong>Location:</strong></label>-->
+                         <strong>Location:</strong>
+                         <p style="color:blue" id="message-1"></p>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class=" col-sm-8">
-                         <label for="conditions"  class="col-sm-2 control-label"><strong>Weather conditions:</strong></label>
-                         <p id="message-2"></p>
+                        <div class="col-sm-10">
+                         <!--<label for="conditions"  class="col-sm-2 control-label"><strong>Weather conditions:</strong></label>-->
+                        <strong>Weather conditions:</strong>
+                         <p  style="color:blue" id="message-2"></p>
                         </div>
                     </div>
-          </form>
-               
+            </form>
+                <p style="padding:16px;"></p>
         </div>
-             <div class="col-xs-12 col-sm-3">
-                <p style="padding:20px;"></p>
-            </div>
-      </div>
+    </div>
 </div>
-
+      
     {{>footer}}
-
     <script src="/js/app.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
- <script>
+    <script>
         $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
          });
     </script>
 
-  {{!-- <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000 } );
-                          $("#carousel-pause").click(function(){
-                $("#mycarousel").carousel('pause');
-            });
-                        $("#carousel-play").click(function(){
-                $("#mycarousel").carousel('cycle');
-            });
-        });
-    </script> --}}
+       </body>
   
-  </body>
-
 </html>
